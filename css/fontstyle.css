@@ -1,0 +1,150 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');*/
+
+
+
+/*Local Font Integrate*/
+/*i.Local Machine Integrate*/
+/*ii.Project Folder Integrate*/
+
+/*i.Local Machine Integrate*/
+
+/*.p1{
+	font-family: "Times New Roman";
+}
+*/
+
+/*.p2{
+	font-family: Arial;
+}
+*/
+
+/*body{
+	font-family: Century,"Times New Roman",Arial;
+}*/
+
+
+
+
+
+
+/*Global Font Integrate*/
+/*.p1{
+	font-family: 'Stick', sans-serif ;
+}
+.p2{
+	font-family: 'Akaya Kanadaka',cursive;
+}*/
+/*body{
+	font-family: 'Stick', sans-serif;
+}*/
+
+
+
+
+
+
+/*ii.Project Folder Integrate*/
+
+@font-face{
+	font-family: 'Stick';
+	src: local('Stick-Regular'),url(../libs/fonts/stick/Stick-Regular.ttf) format('woff');
+
+
+}
+
+@font-face{
+	font-family: 'abc';
+	src: local('AkayaTelivigala-Regular'),url(../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf) format('woff');
+}
+
+.p1{
+	font-family: 'Stick';
+}
+
+.p2{
+	font-family: 'abc';
+}
+
+/*body{
+	font-family: 'abc';
+}*/
+
+.p3{
+	font-family: Arial,Century;
+	/*font-weight: bold;*/
+	font-weight: 400;
+	font-style: italic;
+	/*text-transform: uppercase;*/
+	/*text-transform: lowercase;*/
+	/*text-transform: capitalize;*/
+	/*font-variant: small-caps;
+*/
+
+
+
+/*Text Indentation*/
+
+text-indent: 50px;
+}
+
+
+
+.a1{
+	text-decoration: none;
+	color: red;
+}
+.a1:visited{
+	color: black;
+
+}
+
+.a1:hover{
+	color: blue;
+	font-size: 20px;
+
+}
+
+.menutext{
+	font-family: Cambria;
+	text-decoration: none;
+	background-color: blue;
+	color: black;
+
+	/*padding: 10px;*/
+
+	              /*top&bottom left&right*/
+	/*padding: 10px 20px 30px 40px;*/
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	border-radius: 20px;
+
+
+	transition: background-color 1s,color 2s;
+}
+
+
+
+
+.menutext:hover{
+	background-color: orange;
+	color: wheat;
+}
+
+.imgdesign{
+	width: 80px;
+	height: 80px;
+    
+    transition: all 1s;
+	
+}
+
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+
+
+}

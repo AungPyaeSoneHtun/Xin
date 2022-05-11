@@ -1,0 +1,156 @@
+.container .circle1{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		blue,
+		violet,
+		pink
+		);
+
+}
+
+
+.container .circle2{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		#bc42f5,
+		#4287f5,
+        #8df542
+		);
+
+}
+
+
+.container .circle3{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		rgba(75,91,127,1.00),
+		rgba(170,61,127,1.00),
+		rgba(30,73,127,1.00),
+		rgba(241,21,127,1.00)
+		);
+
+}
+
+
+.container .circle4{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		red 40%,
+		green 0% 60%,
+		blue 0% 80%
+		);
+}
+
+
+.container .circle5{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		red 15%,
+		green 0% 25%,
+		blue 0% 65%,
+		yellow 0% 
+		);
+
+}
+
+
+
+.containertwo{
+	width: 600px;
+	height: 300px;
+	background-color: green;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: auto;
+
+	position: relative;
+}
+
+
+.containertwo .c1{
+	width: 300px;
+	height: 300px;
+	background: black;
+	/*background: linear-gradient(red,orange);*/
+	border-radius: 50%;
+
+	position: absolute;
+	z-index: 2;
+	/*top: 0;
+	left: 0;*/
+
+}
+
+
+.containertwo .c2{
+	width: 320px;
+	height: 320px;
+	/*background: linear-gradient(red,orange);*/
+	background: conic-gradient(
+         red 0,
+         cyan 25%,
+         red 0,
+         blue 70%,
+         red 0,
+         yellow 100%
+		);
+	border-radius: 50%;
+
+	position: absolute;
+
+}
+
+.pointer-container{
+	width: 20px;
+	height: 200px;
+	/*background-color: grey;*/
+
+	position: absolute;
+	top: -40px;
+
+	z-index: 4;
+
+	transform-origin: bottom center;
+
+	animation-name: xin;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+}
+
+.pointer{
+	width: 20px;
+	height: 20px;
+	background-color: darkred;
+	display: block;
+	border-radius: 50%;
+}
+
+p{
+	color: #fff;
+	z-index: 5;
+}
+
+@keyframes xin{
+	from{
+        transform: rotate(0deg);
+	}
+
+	to{
+      transform: rotate(360deg);
+	}
+}

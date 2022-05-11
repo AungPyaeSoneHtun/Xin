@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 5</title>
+        <style type="text/css">
+            *{box-sizing: border-box;}
+            body{
+                font-family: sans-serif;
+                background-color: rgb(233, 233, 233);
+
+                padding: 0;
+                margin: 0;
+
+                position: relative;
+                overflow: hidden;
+            }
+
+            .header{
+                text-align: center;
+                margin-top: 10px;
+            }
+            .header span{
+                font-size: 33px;
+                color: #666;                
+            }
+            p{color: #a7a1a1;}
+
+            .card{
+                width: 350px;
+                height: 250px;
+
+                background-color: #fff;
+
+                border-radius: 8px;
+                border: 1px solid #f2f2f2;
+                padding: 20px;
+
+                position: absolute;
+
+            }
+
+            .supervisor{
+                top: 80%;
+                left:10%;
+                
+                transform: translateY(80%);
+                border-top: 5px solid #4a9a9e;
+            }
+            .calculator{
+                top:80%;
+                right: 10%;
+                transform: translateY(80%);
+                border-top: 5px solid #5298e3;
+            }
+            .team{
+                top:40%;
+                left: 50%;
+                transform: translate(-50%,50%); 
+                border-top: 5px solid #c7243f;
+            }
+            .karma{
+                top: 170%;
+                left:50% ;
+                transform: translate(-50%,80%);
+                
+                border-top:5px solid #c48921;
+            }          
+
+            .icon{
+                width: 25%;
+                height: 30%;
+
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <span>Reliable,efficient delivery</span>
+            <h1>Powered by Technology</h1>
+            <p>
+                Our Artificial intelligence powered tools use millions of project data <br/>
+                points to ensure that your project is successful.
+            </p>
+        </div>
+
+        <div class="card supervisor">
+            <h2>Supervisor</h2>
+            <p>Monitors activity to identify project roadblocks</p>
+            <img src="./img/icon-supervisor.svg" alt="icon_supervisor" width="100%" class="icon" />
+        </div>
+        <div class="card team">
+            <h2>Team Builder</h2>
+            <p>Scans our talent network to create the optimal team for your project</p>
+            <img src="./img/icon-team-builder.svg" alt="icon_team_builder" width="100%" class="icon" />
+        </div>
+        <div class="card karma">
+            <h2>Karma</h2>
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <img src="./img/icon-karma.svg" alt="icon_karma" width="100%" class="icon" />
+        </div>
+        <div class="card calculator">
+            <h2>Calculator</h2>
+            <p>uses data from past projects to provide better delivery estimates</p>
+            <img src="./img/icon-calculator.svg" alt="icon_calculator" width="100%" class="icon" />
+        </div>
+    </body>
+</html>

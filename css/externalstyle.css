@@ -1,0 +1,53 @@
+/*Selectors*/
+/*ElementSelectors*/
+/*Group Selector(,)*/
+/*ID Selector*/
+/*Single Selector*/
+h1{
+	color: blue;
+}
+
+
+
+/*Group Selector*/
+h2,h3,h4{
+	color: red;
+}
+
+/*ID Selector*/
+/*#myself{
+	color: blue;
+}
+#sakasa{
+	color: red;
+}
+span{
+	color: blueviolet;
+}*/
+/*
+#myself,#sakasa,span{
+	color: violet;
+}*/
+
+/*.ph,.phone	{
+	color: blue;
+}*/
+
+.ph{
+	color: sandybrown;
+}
+
+.f30{
+	font-size: 30px;
+}
+
+.hay{
+	color: blue;
+}
+
+.hi{
+	color: pink;
+	font-size: 25px;
+}
+
+/*23CS WDFXXXX*/

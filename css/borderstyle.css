@@ -1,0 +1,108 @@
+/*Universal selecter*/
+*{
+	/*cursor: pointer;*/
+}
+
+.borderstyle1{
+	border-style: solid;
+}
+.borderstyle2{
+	border-style: dotted;
+}
+.borderstyle3{
+	border-style: dashed;
+}
+.borderstyle4{
+	border-style: double;
+}
+.borderstyle5{
+	border-style: inset;
+}
+.borderstyle6{
+	border-style: outset;
+}
+.bddesign{
+	width: 200px;
+	height: 200px;
+	background: orange;
+
+	/*border-radius: 50%;*/
+	/*border-radius: 100%;*/
+	border-radius: 10px 40px;
+
+	/*cursor: pointer;*/
+
+	/*border-top-left-radius: 20px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 40px;
+	border-bottom-left-radius: 50px;*/
+}
+
+
+li{
+	/*list-style-type: square;
+	list-style-type: circle;
+	list-style-type: none;*/
+
+	/*list-style: none;*/
+	list-style-type: decimal-leading-zero;
+
+	/*border: 1px solid red;*/
+
+	border: 1px;
+	border-style: solid;
+	border-color: blue;
+
+	list-style-position: inside;   /*outside ll shi default phyit*/
+
+}
+
+/*Attribute Selector*/
+
+
+
+input[type="text"],input[type="number"]{
+	width: 300px;
+	background-color: blueviolet;
+	color: whitesmoke;
+	border-radius: 20px;
+}
+
+input[type="email"]{
+	width: 200px;
+	background-color: pink;
+	color: white;
+	border-radius: 20px;
+}
+
+body{
+	background-image:url('../img/icon/icon1.png') ;
+	background-repeat: no-repeat;
+
+	/*background-position: center;*/
+	/*background-position: right;*/
+	/*background-position: left;*/
+	/*background-position: top;*/
+	/*background-position: bottom;*/
+	/*background-position: right top;*/
+	/*background-position: left top;*/
+	/*background-position: right bottom;*/
+	background-position: left bottom;
+}
+
+
+
+
+
+
+
+/*
+el (tag)
+id (#)
+cl (.)
+uni (*)
+group (,) si/mul
+attribute
+*/
+
+/*array []*/

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EventListener</title>
+</head>
+<body>
+
+	<div>
+		<h3>Show Hide Button</h3>
+
+		<div id="paragraph">
+			<p id="p1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+		</div>
+		<!-- <button type="button" id="hideme" class="" onclick="hideme()">Hide Me</button> -->
+		<button type="button" id="hideme" class="">Hide Me</button>
+
+		<hr/>
+
+
+		<div>
+			<p id="mm">We Love Myanmar</p>
+			<button type="button"id="red" class="">Red</button>
+			<button type="button"id="green" class="">Green</button>
+			<button type="button"id="blue" class="">Blue</button>
+			<button type="button"id="orange" class="">Orange</button>
+			<button type="button"id="bold" class="">Bold</button>
+			<button type="button"id="italic" class="">Italic Text</button>
+			<button type="button"id="underline" class="">Underline Text</button>
+		</div>
+
+
+	</div>
+
+	<script type="text/javascript">
+
+	    let pgh = document.getElementById("paragraph");
+	    let hidemebtn= document.getElementById("hideme");
+
+		// function hideme(){
+			// console.log('hay i am working');
+			// console.log(pgh);
+
+			// pgh.style.display = "none";
+			// hidemebtn.innerText = "ShowMe";\
+
+			
+
+		// 	if(pgh.style.display === "none"){
+		// 		pgh.style.display = "block";
+		// 		hidemebtn.innerHTML = "Hide Me";
+		// 	}else{
+		// 		pgh.style.display = "none";
+		// 		hidemebtn.textContent = "Show Me";
+		// 	}
+		// }
+
+		hidemebtn. addEventListener("click",function(){
+			// console.log("i am working");
+
+		 	if(pgh.style.display === "none"){
+		 		pgh.style.display = "block";
+		 		hidemebtn.innerHTML = "Hide Me";
+		 	}else{
+		 		pgh.style.display = "none";
+		 		hidemebtn.textContent = "Show Me";
+		 	}	
+
+		 });
+
+		 	document.getElementById('red').addEventListener("click",function(){
+               document.getElementById("mm").style.color="red";		 	
+		});
+
+		 	document.getElementById('green').addEventListener("click",function(){
+               document.getElementById("mm").style.color="green";		 	
+		});
+
+		 	document.getElementById('blue').addEventListener("click",function(){
+               document.getElementById("mm").style.color="blue";		 	
+		});
+
+		 	document.getElementById('orange').addEventListener("click",function(){
+               document.getElementById("mm").style.color="orange";		 	
+		});
+
+		 	document.getElementById('bold').addEventListener("click",function(){
+               document.getElementById("mm").style.fontWeight="bold";		 	
+		});
+
+		 	document.getElementById('italic').addEventListener("click",function(){
+               document.getElementById("mm").style.fontStyle="italic";		 	
+		});
+
+		 	document.getElementById('underline').addEventListener("click",function(){
+               document.getElementById("mm").style.textDecoration="underline";		 	
+		});
+		
+	</script>
+</body>
+</html>

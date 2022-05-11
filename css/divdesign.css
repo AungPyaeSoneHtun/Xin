@@ -1,0 +1,86 @@
+.firstdiv{
+	width:  200px;
+    height: 150px;
+   /* background-color: black;*/
+    /*background-color: rgba(29,21,127,0.76); */
+	color: wheat;
+	background: rgba(29,21,127,0.76);
+	font-size: 28px;
+}
+
+.seconddiv{
+	width: 300px;
+	height: 300px;
+	
+	/*background-color: silver;*/
+	/*background-image: url('../img/cover/iu2.jpg');*/
+	background: url('../img/cover/iu2.jpg');
+	background-repeat: no-repeat;
+	/*background-repeat: repeat-x;*/
+	/*background-repeat: repeat-y;*/
+	/*background-repeat: repeat;*/
+
+	background-position: center;
+
+
+	/*border: 3px;
+	border-style: solid;
+	border-color: black;
+*/
+	/*Short Hand*/
+	          /*s s c*/
+     border: 3px solid purple;    
+	
+	color: gold;
+
+}
+
+.div3{
+	width: 300px;
+	height: 300px;
+	border: 3px solid black;
+	
+
+	color: wheat;
+	/*background: linear-gradient(red, orange, yellow, green, blue, indigo,violet); */
+	/*background-image:linear-gradient(red, orange, yellow, green, blue, indigo,violet); */ 
+	/*background: linear-gradient(rgba(29,21,127,0.76),rgba(221,238,127,0.76));*/
+	/*background: linear-gradient(#3244a8,#a89d32);*/
+
+	/*background: linear-gradient(
+		90deg,
+		red,
+		green,
+		yellow
+
+		);*/
+
+		background: radial-gradient(
+	    rgba(49,85,134,0.3),
+	    rgba(184,72,134,0.3)
+	    ) , url(../img/cover/iu2.jpg);
+	    background-repeat: no-repeat;;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: cover;
+}
+
+
+.div4{
+	width: 200px;
+	height: 300px;
+	
+	color: pink;
+
+	background: linear-gradient(45deg,rgba(49,85,134,0.3),rgba(184,72,134,0.3)) , url(../img/cover/iu2.jpg);
+	background-repeat: no-repeat;
+}
+
+/*function
+name()*/
+
+/*single parameter function
+name(parameter)*/
+
+/*multi parameter function
+name(parameter,parameter)*/

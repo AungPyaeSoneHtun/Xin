@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>StringMethod</title>
+	<style type="text/css">
+		/*#mm{
+			color: red;
+			font-size: 50px;
+		}
+		#k{
+			font-family: Arial;
+			color: blue;
+
+		}*/
+	</style>
+</head>
+<body>
+
+	<div>
+		<h1 id="mm">Myanmar</h1>
+		<h1 id="k">Korea</h1>
+	</div>
+
+	<script type="text/javascript">
+		
+          //StringMethod
+
+          let val = "MgMg";
+          let vl = "Kyaw"
+          console.log(val.length);
+
+          let nm = val + vl;
+          console.log(nm);
+
+          // Append
+          val += vl;
+          console.log(val);
+
+          // concat
+
+          var firstname = 'Xin';
+          var lastname = "Ken";
+          var fullname = lastname.concat(firstname);
+
+          console.log(fullname);
+
+          // Character Array
+          console.log(fullname[5]);
+          console.log(fullname[fullname.length-2]);
+
+          console.log(fullname.charAt(2));
+          console.log(fullname.charAt(fullname.length-2));
+
+
+          let fav = "My fav color is blue";
+          console.log(fav);
+          // result = true
+          console.log(fav.includes("blue"));
+          // result = false
+          console.log(fav.includes("red"));
+          // result = false
+          console.log(fav.includes("BLUE"));
+          // result = false
+          console.log(fav.includes("Blue"));
+          // result = true
+          console.log(fav.includes("bl"));
+
+
+          // replace(old,new);
+          console.log(fav.replace("blue","black"));
+          console.log(fav.replace("blue","red"));
+          console.log(fav.replace("color","parpar"));
+
+          // substring(index,length);
+          console.log(fav.substring(0,10)+"...");
+          console.log(fav.substring(0,10).concat('.....'));
+
+          // Change case
+          console.log(fav.toUpperCase());
+          console.log(fav.toLowerCase());
+
+          // Style
+
+          let abc = document.getElementById("mm");
+          document.getElementById("mm").style.color = "blue";
+          document.getElementById("mm").style.fontSize = "50px";
+
+          console.log(abc);
+
+          document.getElementById("k").style.color = "violet";
+          document.getElementById("k").style.fontFamily = "Arial";
+          document.getElementById("k").style.display = "none"
+
+
+	</script>
+
+</body>
+</html>

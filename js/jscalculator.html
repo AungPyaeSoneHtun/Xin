@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Calculator</title>
+</head>
+<body>
+
+
+	<!-- <form action="" method=""> -->
+
+		<div>
+			<label for="firstnumber">First Number</label>
+			<input type="text" name="firstnumber" id="firstnumber" class="">
+		</div>
+
+		<br/> <br/>
+
+		<div>
+			<label for="firstnumber">Second Number</label>
+			<input type="text" name="secondnumber" id="secondnumber" class="">
+		</div>
+
+		<br/> <br/>
+
+		<button id="add" class="" onclick="sign('+')">+</button>
+		<button id="sub" class="" onclick="sign('-')">-</button>
+		<button id="multi" class="" onclick="sign('*')">*</button>
+		<button id="dev" class="" onclick="sign('/')">/</button>
+		<button id="mod" class="" onclick="sign('%')">%</button>
+
+		<button id="cal" class="" onclick="calculate()">Calculate</button>
+
+		<input type="text" name="tempsign" id="tempsign" class="" />
+	
+		<input type="text" name="result" id="result" class="" />
+	
+	<!-- </form> -->
+
+		<script type="text/javascript">
+
+			function sign(sign){
+				// console.log('hay i am' + sign);
+
+				document.getElementById('tempsign').value = sign;
+			}
+
+			function calculate(){
+				let num1 = Number(document.getElementById('firstnumber').value),
+					num2 = Number(document.getElementById('secondnumber').value);
+					// console.log(num1,num2);
+
+					let getsign = document.getElementById('tempsign').value;
+					// console.log(num2,getsign,num2);
+
+					let cal;
+
+					switch(getsign){
+						case '+':
+							cal = num1+num2;
+							break;
+
+						case '-':
+							cal = num1-num2;
+							break;
+
+						case '*':
+							cal = num1*num2;
+							break;
+
+					    case '/':
+							cal = num1/num2;
+							break;
+
+						case '%': key: "value", 
+							cal = num1%num2;
+							break;
+						default:
+							window.alert('No Sign');
+					}
+					document.getElementById('result').value = cal;
+			}
+			
+		</script>
+
+</body>
+</html>
